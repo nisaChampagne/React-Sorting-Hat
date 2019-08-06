@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/home-page/Home';
+import Questions from './components/questionsandanswers/Questions';
+import Results from './components/results-page/Results';
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      page: 'home',
+      result:''
+    }
+  }
+  setPage = page => {
+    this.setState({page: page})
+  }
+  result = result => {
+    this.setPage('results')
+    this.setState({result: result})
+  }
+
   render() {
+    let page
+    if(this.state.page === 'home') page = <Home click={this.setPage}/>
+    if(this.state.page === 'questions') page = <Questions click={this.result}/>
+    if(this.state.page === 'results') page = <Results house={this.state.result}/>
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div>
+           {page}
+        </div>
       </div>
     );
   }
