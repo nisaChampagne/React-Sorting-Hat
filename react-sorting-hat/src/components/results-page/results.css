@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
+
 .results {
     display: flex;
     justify-content: center;
@@ -12,10 +15,11 @@
     max-width: 66vw;
     text-align: center;
     margin-left: 250px;
-
+    font-family: 'Shadows Into Light', cursive;
 }
 .result {
     font-size: 5vw;
+    font-family: 'Shadows Into Light', cursive;
     line-height: 5vw;
     width: 100%;
 } 
