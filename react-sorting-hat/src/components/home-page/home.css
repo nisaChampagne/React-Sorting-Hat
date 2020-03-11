@@ -8,7 +8,7 @@
     align-items: center;
     flex-direction: column;
     background-image: url('https://i.pinimg.com/originals/47/b5/67/47b567ff37393b5c564cbe1186e90662.jpg');
-
+    background-size: cover;
 }
 
 .hogwarts-crest {

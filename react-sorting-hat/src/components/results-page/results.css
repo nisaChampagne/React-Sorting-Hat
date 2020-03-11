@@ -16,6 +16,8 @@
     text-align: center;
     margin-left: 250px;
     font-family: 'Shadows Into Light', cursive;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 .result {
     font-size: 5vw;
@@ -23,3 +25,12 @@
     line-height: 5vw;
     width: 100%;
 } 
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .results {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }

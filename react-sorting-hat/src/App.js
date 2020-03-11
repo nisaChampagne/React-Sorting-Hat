@@ -3,6 +3,8 @@ import Home from './components/home-page/Home';
 import Questions from './components/questionsandanswers/Questions';
 import Results from './components/results-page/Results';
 
+import { Route, Switch } from 'react-router-dom'
+
 class App extends Component {
   constructor(){
     super()
@@ -28,6 +30,10 @@ class App extends Component {
       <div className="App">
         <div>
            {page}
+           <Switch>
+             <Route path='/home' component={Home} />
+             <Route path='/quiz' component={page} />
+           </Switch>
         </div>
       </div>
     );
