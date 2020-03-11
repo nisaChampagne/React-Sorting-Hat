@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
+.home {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://i.pinimg.com/originals/47/b5/67/47b567ff37393b5c564cbe1186e90662.jpg');
+
+}
+
+.hogwarts-crest {
+    height: 20vw;
+    width: 25vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-size: 3vw;
+    font-family: 'Shadows Into Light', cursive;
+}
+h2 {
+    font-size: 2.55vw;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.play-btn{
+    border: none;
+    outline: none;
+    font-size: 2vw;
+    font-family: 'Shadows Into Light', cursive;
+    background-image: linear-gradient(gold, white);
+    border-radius: 10px;
+    cursor: pointer;
+}
